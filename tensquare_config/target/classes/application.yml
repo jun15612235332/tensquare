@@ -1,0 +1,23 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: tensquare-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/sunxianjun121/tensquare.git
+          username: sunxianjun121
+          password: jj1220949853
+  rabbitmq:
+    host: 121.89.195.63
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+management: #暴露触发消息总线的地址
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

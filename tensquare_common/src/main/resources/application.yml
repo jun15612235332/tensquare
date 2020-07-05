@@ -1,0 +1,5 @@
+jwt:
+  config:
+    key: zhiyou100
+    ttl: 86400000
+

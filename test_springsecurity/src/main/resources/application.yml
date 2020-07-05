@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.89.195.63:3311/test_springsecurity?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  main:
+    allow-bean-definition-overriding: true
+#开启Mybatis下划线命名转驼峰命名
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

@@ -1,0 +1,16 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: tensquare-search
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://121.89.195.63:3311/tensquare_article?characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+  jpa:
+      database: mysql
+      show-sql: true
